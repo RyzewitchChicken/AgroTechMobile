@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/drawerLayout">
+    android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,8 +20,256 @@
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/fondo"
+            app:srcCompat="@drawable/backopacity"
             tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+
+            style="@style/titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="Noticias"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="364dp"
+
+            android:layout_height="124dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/borderer"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView29"
+                style="@style/greentitles"
+                android:layout_width="115dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:text="Messages"
+                android:textAllCaps="true"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="196dp" />
+
+
+            <TextView
+                android:id="@+id/textView30"
+                style="@style/cardnames"
+                android:layout_width="115dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="-110dp"
+                android:layout_marginTop="30dp"
+                android:text="Johnny" />
+
+            <TextView
+                android:id="@+id/textView41"
+                style="@style/ellorem"
+                android:layout_width="333dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="-110dp"
+                android:layout_marginTop="60dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..." />
+
+            <TextView
+                android:id="@+id/textView42"
+                style="@style/nowtitles"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="-25dp"
+                android:text="now"
+                tools:layout_editor_absoluteX="129dp"
+                tools:layout_editor_absoluteY="196dp" />
+
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="200dp"
+            android:text="Servicios"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="364dp"
+
+            android:layout_height="124dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="248dp"
+            android:background="@drawable/borderer"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView49"
+                style="@style/greentitles"
+                android:layout_width="115dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:text="Messages"
+                android:textAllCaps="true"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="196dp" />
+
+
+            <TextView
+                android:id="@+id/textView50"
+                style="@style/cardnames"
+                android:layout_width="115dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="-110dp"
+                android:layout_marginTop="30dp"
+                android:text="Johnny" />
+
+            <TextView
+                android:id="@+id/textView51"
+                style="@style/ellorem"
+                android:layout_width="329dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-110dp"
+                android:layout_marginTop="60dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..." />
+
+            <TextView
+                android:id="@+id/textView52"
+                style="@style/nowtitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="-25dp"
+                android:text="now"
+                tools:layout_editor_absoluteX="129dp"
+                tools:layout_editor_absoluteY="196dp" />
+
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="396dp"
+            android:text="Eventos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="584dp"
+            android:text="Plataformas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="364dp"
+
+            android:layout_height="124dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="440dp"
+            android:background="@drawable/borderer"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/greentitles"
+                android:layout_width="115dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:text="Messages"
+                android:textAllCaps="true"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="196dp" />
+
+
+            <TextView
+                android:id="@+id/textView20"
+                style="@style/cardnames"
+                android:layout_width="115dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="-110dp"
+                android:layout_marginTop="30dp"
+                android:text="Johnny" />
+
+            <TextView
+                android:id="@+id/textView21"
+                style="@style/ellorem"
+                android:layout_width="332dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-110dp"
+                android:layout_marginTop="60dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut..." />
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/nowtitles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="-25dp"
+                android:text="now"
+                tools:layout_editor_absoluteX="129dp"
+                tools:layout_editor_absoluteY="196dp" />
+
+
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="73dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="640dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/celagro" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="628dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/web" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="272dp"
+            android:layout_marginTop="648dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/telef" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -28,9 +278,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:menu="@menu/nav_menu"
-        app:headerLayout="@layout/nav_header"
+        android:background="#008F39"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true">
+        android:fitsSystemWindows="true"
+        >
 
     </com.google.android.material.navigation.NavigationView>
 

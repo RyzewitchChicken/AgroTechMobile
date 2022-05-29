@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ClientEdit">
 
     <ImageView
         android:id="@+id/imageView9"
@@ -12,16 +13,16 @@
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fondo" />
+        app:srcCompat="@drawable/backopacity" />
 
     <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="21dp"
-        android:layout_marginTop="51dp"
+        android:layout_marginTop="31dp"
         android:layout_marginEnd="21dp"
-        android:layout_marginBottom="51dp"
+        android:layout_marginBottom="31dp"
         android:background="@drawable/borderer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
-
+            style="@style/edicontent"
             android:text="Nombre:" />
 
         <TextView
@@ -53,7 +54,8 @@
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
-            android:text="Juan carlos Gomez" />
+            android:text="Juan carlos Gomez"
+            style="@style/edicontent"/>
 
         <TextView
             android:id="@+id/textView08"
@@ -62,7 +64,8 @@
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="60dp"
-            android:text="DNI:" />
+            android:text="DNI:"
+            style="@style/edicontent"/>
 
         <TextView
             android:id="@+id/textView"
@@ -71,7 +74,8 @@
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="90dp"
-            android:text="44654456" />
+            android:text="44654456"
+            style="@style/edicontent"/>
 
 
         <TextView
@@ -82,7 +86,8 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="120dp"
 
-            android:text="INFORMACION CONTACTO " />
+            android:text="INFORMACION CONTACTO "
+            style="@style/datatitles"/>
 
         <TextView
             android:id="@+id/textView11"
@@ -91,7 +96,8 @@
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="150dp"
-            android:text="Correo: " />
+            android:text="Correo: "
+            style="@style/edicontent"/>
 
         <TextView
             android:id="@+id/textView12"
@@ -100,7 +106,8 @@
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="180dp"
-            android:text="jcago@agrotech.com.pe " />
+            android:text="jcago@agrotech.com.pe "
+            style="@style/edicontent"/>
 
         <TextView
             android:id="@+id/textView13"
@@ -109,7 +116,8 @@
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="210dp"
-            android:text="Contraseña: " />
+            android:text="Contraseña: "
+            style="@style/edicontent"/>
 
         <TextView
             android:id="@+id/textView14"
@@ -118,7 +126,8 @@
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="240dp"
-            android:text="******** " />
+            android:text="******** "
+            style="@style/edicontent"/>
 
         <TextView
             android:id="@+id/textView15"
@@ -127,7 +136,8 @@
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="270dp"
-            android:text="Telefono:" />
+            android:text="Telefono:"
+            style="@style/edicontent"/>
 
         <TextView
             android:id="@+id/textView4"
@@ -136,7 +146,8 @@
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="300dp"
-            android:text="78545454" />
+            android:text="78545454"
+            style="@style/edicontent"/>
 
         <TextView
             android:id="@+id/textView16"
@@ -144,7 +155,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
-            android:text="Back" />
+            android:text="Back"
+            android:textColor="#FF008F39"
+            android:textSize="15sp"
+            android:lineSpacingMultiplier="0.27"/>
 
         <ImageView
             android:id="@+id/imageView17"
@@ -161,15 +175,15 @@
             android:layout_height="3dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="70dp"
-             />
+            app:cardBackgroundColor="#008F39"/>
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/back"
             android:layout_width="12dp"
             android:layout_height="22dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/lapiz" />
+            app:srcCompat="@drawable/raster" />
 
         <TextView
             android:id="@+id/textView20"
@@ -178,7 +192,8 @@
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginBottom="30dp"
-            android:text="INFORMACION PERSONAL" />
+            android:text="INFORMACION PERSONAL"
+            style="@style/datatitles"/>
 
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

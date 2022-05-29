@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Agrotech"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".LogIn"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,10 +23,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AddPlot">
+            android:name=".AddPlot"
+            android:parentActivityName=".MainActivity">
         </activity>
         <activity
-            android:name=".ClientData">
+            android:name=".ClientData"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".ClientEdit"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".MainActivity">
         </activity>
     </application>
 

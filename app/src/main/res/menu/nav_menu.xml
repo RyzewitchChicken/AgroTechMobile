@@ -1,35 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
         android:id="@+id/f01"
-        android:title="Agregar Parcela"
+        android:title="Parcela"
+        android:enabled="true"
         />
     <item
         android:id="@+id/f02"
-        android:title="Parcela"
+        android:title="Agregar"
+
         />
     <item
         android:id="@+id/f03"
-        android:title="Parcela"
+        android:title="Ver"
         />
     <item
         android:id="@+id/f04"
-        android:title="Parcela"
+        android:title="Ají"
         />
     <item
         android:id="@+id/f05"
-        android:title="Parcela"
+        android:title="Agregar"
         />
     <item
         android:id="@+id/f06"
-        android:title="Parcela"
+        android:title="Ver"
         />
     <item
         android:id="@+id/f07"
-        android:title="Parcela"
+        android:title="Temporada"
         />
     <item
         android:id="@+id/f08"
-        android:title="Parcela"
+        android:title="Tratamiento"
         />
+
 </menu>

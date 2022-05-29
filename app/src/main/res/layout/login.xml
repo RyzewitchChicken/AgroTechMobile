@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fondo"
+        app:srcCompat="@drawable/backopacity"
         tools:layout_editor_absoluteX="0dp" />
 
     <ImageView
@@ -36,6 +36,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="ID Usuario"
+        android:background="@drawable/logininput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,19 +51,33 @@
         android:layout_marginEnd="50dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Password"
+        android:text="Contraseña"
+        android:background="@drawable/logininput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/into"
         android:layout_width="240dp"
         android:layout_height="49dp"
         android:layout_marginStart="76dp"
         android:layout_marginTop="518dp"
-        android:text="Button"
+        android:text="Iniciar Sesión"
+
+        android:background="@drawable/button_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="300dp"
+        android:text="Inicio de Sesión"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
