@@ -6,12 +6,21 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
 
 import androidx.appcompat.app.AppCompatActivity
+import com.example.agrotech.interfaces.UserService
+import com.example.agrotech.models.User
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class ClientData: AppCompatActivity() {
 
-
+    lateinit var name:TextView
+    lateinit var email:TextView
+    lateinit var dni:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.client_data)
@@ -25,5 +34,26 @@ class ClientData: AppCompatActivity() {
             val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
+        name=findViewById(R.id.textView3)
+        email=findViewById(R.id.textView4)
+        dni=findViewById(R.id.button2)
+        val id=1
+        val userService: UserService = Retro().getRetroClient().create(UserService::class.java)
+        userService.getUserData(id).enqueue(object: Callback<User> {
+            override fun onResponse(call: Call<User>?, response: Response<User>?) {
+                Toast.makeText(this@ClientData,"Ok", Toast.LENGTH_LONG).show()
+                if (response != null) {
+                    name.setText(response.body().name)
+                    email.setText("CORREO: "+response.body().email)
+                    dni.setText("DNI: "+response.body().dni.toString())
+                }
+            }
+
+            override fun onFailure(call: Call<User>?, t: Throwable?) {
+                Toast.makeText(this@ClientData,"Error", Toast.LENGTH_LONG).show()
+            }
+
+        })
+
     }
 }

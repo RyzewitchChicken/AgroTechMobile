@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.agrotech">
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -32,6 +33,30 @@
         </activity>
         <activity
             android:name=".ClientEdit"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".ViewPlot"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".AddChilli"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".Season"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".ViewChilli"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".Treat"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".Notification"
             android:parentActivityName=".MainActivity">
         </activity>
 

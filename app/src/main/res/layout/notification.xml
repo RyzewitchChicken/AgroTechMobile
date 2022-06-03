@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Notification">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backopacity" />
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/borderer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="80dp"
+            android:lineSpacingMultiplier="0.85"
+            android:text="NOTIFICACIONES"
+            android:textColor="#FF000000"
+            android:textSize="26.67sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <FrameLayout
+            android:layout_width="310dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/border_notify">
+            <TextView
+                android:id="@+id/plage"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="Temporada de Verano:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/temp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="TEMPERATURA: 28°C"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/humi"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="50dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="HUMEDAD:10%"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/plag"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="90dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="PLAGA:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="110dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="FUSARIUM FDHJFHKSD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="6dp"
+                android:textColor="#7f8995"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="03/06/22"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="310dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/border_notify">
+            <TextView
+                android:id="@+id/regis"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="Plagas registradas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/temp2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="TEMPERATURA: 28°C"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/humi2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="50dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="HUMEDAD:10%"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/plag2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="90dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="PLAGA:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="110dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="FUSARIUM FDHJFHKSD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/name2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="130dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="FUSARIUM FDHJFHKSD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/name3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="150dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="FUSARIUM FDHJFHKSD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/name4"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="170dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="FUSARIUM FDHJFHKSD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/name5"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="190dp"
+                android:textColor="#FF000000"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="FUSARIUM FDHJFHKSD"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="6dp"
+                android:textColor="#7f8995"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.29"
+                android:text="03/06/22"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="148dp"
+            android:layout_height="126dp"
+            android:layout_marginTop="350dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80dp"
+            app:srcCompat="@drawable/agrotech" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingMultiplier="0.27"
+            android:text="Back"
+            android:textColor="#FF008F39"
+            android:textSize="15sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="70dp"
+            app:cardBackgroundColor="#008F39" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="12dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/raster" />
+
+
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,9 +4,9 @@
 
     <item
         android:id="@+id/f01"
-        android:title="Parcela"
+        android:checkable="false"
         android:enabled="true"
-        />
+        android:title="Parcela" />
     <item
         android:id="@+id/f02"
         android:title="Agregar"
