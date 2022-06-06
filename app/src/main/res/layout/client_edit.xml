@@ -47,15 +47,20 @@
             style="@style/edicontent"
             android:text="Nombre:" />
 
-        <TextView
-            android:id="@+id/textView07"
+        <EditText
+            android:id="@+id/namedit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
-            android:text="Juan carlos Gomez"
-            style="@style/edicontent"/>
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:focusable="false"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            style="@style/edicontent"
+            tools:ignore="Deprecated" />
 
         <TextView
             android:id="@+id/textView08"
@@ -67,14 +72,16 @@
             android:text="DNI:"
             style="@style/edicontent"/>
 
-        <TextView
-            android:id="@+id/textView"
+        <EditText
+            android:id="@+id/dniedit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="90dp"
-            android:text="44654456"
+            android:ems="10"
+            android:inputType="number"
+            android:focusable="false"
             style="@style/edicontent"/>
 
 
@@ -99,14 +106,16 @@
             android:text="Correo: "
             style="@style/edicontent"/>
 
-        <TextView
-            android:id="@+id/textView12"
+        <EditText
+            android:id="@+id/emailedit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="180dp"
-            android:text="jcago@agrotech.com.pe "
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:focusable="false"
             style="@style/edicontent"/>
 
         <TextView
@@ -119,14 +128,16 @@
             android:text="Contraseña: "
             style="@style/edicontent"/>
 
-        <TextView
-            android:id="@+id/textView14"
+        <EditText
+            android:id="@+id/passedit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="240dp"
-            android:text="******** "
+            android:ems="10"
+            android:inputType="textPassword"
+            android:focusable="false"
             style="@style/edicontent"/>
 
         <TextView
@@ -139,14 +150,16 @@
             android:text="Telefono:"
             style="@style/edicontent"/>
 
-        <TextView
-            android:id="@+id/textView4"
+        <EditText
+            android:id="@+id/phoneedit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="300dp"
-            android:text="78545454"
+            android:ems="10"
+            android:inputType="number"
+            android:focusable="false"
             style="@style/edicontent"/>
 
         <TextView
@@ -161,13 +174,53 @@
             android:lineSpacingMultiplier="0.27"/>
 
         <ImageView
-            android:id="@+id/imageView17"
+            android:id="@+id/send"
             android:layout_width="39dp"
             android:layout_height="39dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="250dp"
             android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/lapiz" />
+        <ImageView
+            android:id="@+id/imageedit"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/lapiz" />
+        <ImageView
+            android:id="@+id/imagedni"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="90dp"
+            app:srcCompat="@drawable/lapiz" />
+        <ImageView
+            android:id="@+id/imageemail"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="180dp"
+            app:srcCompat="@drawable/lapiz" />
+        <ImageView
+            android:id="@+id/imagepass"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="240dp"
+            app:srcCompat="@drawable/lapiz" />
+        <ImageView
+            android:id="@+id/imagephone"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="300dp"
             app:srcCompat="@drawable/lapiz" />
 
         <androidx.cardview.widget.CardView

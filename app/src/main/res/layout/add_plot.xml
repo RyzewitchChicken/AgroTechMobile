@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -52,7 +52,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/plotstatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -75,14 +75,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/area"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="400dp"
         android:background="@drawable/editborder"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal|numberSigned"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -98,14 +98,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/volume"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="512dp"
         android:background="@drawable/editborder"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal|numberSigned"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -126,7 +126,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
 
-        android:layout_marginTop="628dp"
+        android:layout_marginTop="612dp"
         android:text="Foto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -139,6 +139,16 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="112dp"
         android:text="Descripcion de la Parcela:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/add"
+        android:layout_width="240dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="660dp"
+        android:text="Agregar"
+        android:background="@drawable/button_style"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

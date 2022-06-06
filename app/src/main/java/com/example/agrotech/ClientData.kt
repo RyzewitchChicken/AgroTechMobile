@@ -10,6 +10,7 @@ import android.widget.TextView
 import android.widget.Toast
 
 import androidx.appcompat.app.AppCompatActivity
+import com.example.agrotech.MainActivity.Companion.globalVar
 import com.example.agrotech.interfaces.UserService
 import com.example.agrotech.models.User
 import retrofit2.Call
@@ -39,11 +40,11 @@ class ClientData: AppCompatActivity() {
         dni=findViewById(R.id.button2)
         val id=1
         val userService: UserService = Retro().getRetroClient().create(UserService::class.java)
-        userService.getUserData(id).enqueue(object: Callback<User> {
+        userService.getUserData(globalVar).enqueue(object: Callback<User> {
             override fun onResponse(call: Call<User>?, response: Response<User>?) {
                 Toast.makeText(this@ClientData,"Ok", Toast.LENGTH_LONG).show()
                 if (response != null) {
-                    name.setText(response.body().name)
+                    name.setText(response.body().name +" "+ response.body().lastname)
                     email.setText("CORREO: "+response.body().email)
                     dni.setText("DNI: "+response.body().dni.toString())
                 }
