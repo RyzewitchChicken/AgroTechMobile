@@ -5,11 +5,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Treat">
+
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/backopacity" />
 
 
@@ -32,38 +37,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="348dp"
+        android:layout_marginTop="9dp"
         android:background="@drawable/editborder"
         android:ems="10"
-        android:inputType="textPersonName"
 
+        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName20"
+        android:id="@+id/etComment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="676dp"
+        android:layout_marginTop="9dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView100" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/editextDescp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="9dp"
         android:background="@drawable/editborder"
         android:ems="10"
-        android:inputType="textPersonName"
 
+        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView19"
@@ -71,10 +76,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="15dp"
         android:text="Descripción de tratamiento:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
     <TextView
         android:id="@+id/textView18"
@@ -92,13 +97,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="124dp"
 
+        android:layout_marginTop="9dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <TextView
         android:id="@+id/textView21"
@@ -106,10 +111,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginTop="15dp"
         android:text="Fecha de Inicio:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editextDescp" />
 
     <TextView
         android:id="@+id/textView22"
@@ -117,10 +122,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="412dp"
+        android:layout_marginTop="15dp"
         android:text="Fecha fin:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
 
     <TextView
         android:id="@+id/textView23"
@@ -128,34 +133,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="520dp"
+        android:layout_marginTop="15dp"
         android:text="Receta de Tratamiento:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="9dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/etReceta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="568dp"
+        android:layout_marginTop="9dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <TextView
         android:id="@+id/textView100"
@@ -163,8 +168,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="628dp"
+        android:layout_marginTop="15dp"
         android:text="Comentario de Tratamiento:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etReceta" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="240dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="660dp"
+        android:text="Agregar"
+        android:background="@drawable/button_style"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
