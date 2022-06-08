@@ -1,5 +1,6 @@
 package com.example.agrotech
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -7,6 +8,7 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.agrotech.MainActivity.Companion.globalVar
 import com.example.agrotech.interfaces.PlotService
@@ -14,6 +16,7 @@ import com.example.agrotech.models.Plot
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import kotlin.system.exitProcess
 
 class AddPlot : AppCompatActivity() {
     lateinit var add:Button
@@ -57,6 +60,26 @@ class AddPlot : AppCompatActivity() {
         when(item.itemId) {
             R.id.iconclient -> {
                 startActivity( Intent(this@AddPlot , ClientData::class.java))
+            }
+            R.id.iconnotify -> {
+                startActivity( Intent(this@AddPlot , Notification::class.java))
+            }
+            R.id.close -> {
+                var builder= AlertDialog.Builder(this@AddPlot)
+                builder.setTitle("Cerrar Sesión")
+                builder.setMessage("¿Desea cerrar sesión?")
+                builder.setPositiveButton("Si", DialogInterface.OnClickListener{
+                        dialog, id ->
+                    moveTaskToBack(true)
+                    exitProcess(-1)
+                    dialog.cancel()
+                })
+                builder.setNegativeButton("No", DialogInterface.OnClickListener{
+                        dialog, id -> dialog.cancel()
+                })
+                var alert: AlertDialog =builder.create()
+                alert.show()
+
             }
         }
         return super.onOptionsItemSelected(item)

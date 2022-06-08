@@ -23,14 +23,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="124dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4dp"
         android:lineSpacingMultiplier="0.85"
         android:text="Tratamiento"
         android:textColor="#FF000000"
         android:textSize="26.67sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
@@ -87,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="48dp"
         android:text="Seleccionar Parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -178,9 +177,9 @@
         android:layout_width="240dp"
         android:layout_height="49dp"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="660dp"
-        android:text="Agregar"
+        android:layout_marginTop="604dp"
         android:background="@drawable/button_style"
+        android:text="Agregar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

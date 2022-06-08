@@ -8,7 +8,7 @@ import retrofit2.http.Path
 
 interface ChilliService {
 
-    @POST("users/{chilliId}/chillis")
+    @POST("users/{userId}/chillis")
     fun addChilli(@Path("userId") id:Int, @Body data: Chilli
     ): Call<Chilli>
 }

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".ViewPlot">
+
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
@@ -17,8 +18,8 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
         android:lineSpacingMultiplier="0.85"
         android:text="Ver Parcela"
         android:textColor="#FF000000"
@@ -27,15 +28,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/plotdesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="156dp"
-        android:text="La parcela tiene forma rectangular"
+        android:layout_marginTop="116dp"
         android:background="@drawable/editborder"
         android:ems="10"
+        android:focusable="false"
         android:inputType="textPersonName"
+        android:text="La parcela tiene forma rectangular"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,19 +47,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="196dp"
         android:text="Ubicacion de la Parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editextDescp"
+        android:id="@+id/plotloca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="240dp"
         android:background="@drawable/editborder"
         android:ems="10"
+        android:focusable="false"
         android:inputType="textPersonName"
         android:text="C.P El Potao - Barrnca - Barranca"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,19 +72,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="356dp"
+        android:layout_marginTop="316dp"
         android:text="Area de la Parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/plotarea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="360dp"
         android:background="@drawable/editborder"
         android:ems="10"
+        android:focusable="false"
         android:inputType="textPersonName"
         android:text="500 m2"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,21 +97,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="464dp"
+        android:layout_marginTop="424dp"
         android:text="Volumen de la parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/plotvolu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="512dp"
+        android:layout_marginTop="472dp"
         android:background="@drawable/editborder"
         android:ems="10"
-        android:text="2500 m3"
+        android:focusable="false"
         android:inputType="textPersonName"
+        android:text="2500 m3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -117,7 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="576dp"
+        android:layout_marginTop="536dp"
         android:text="Foto de la parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -128,7 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
 
-        android:layout_marginTop="628dp"
+        android:layout_marginTop="588dp"
         android:text="Foto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -139,8 +144,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="72dp"
         android:text="Descripcion de la Parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

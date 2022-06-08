@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group >
 
-    <item
-        android:id="@+id/f01"
-        android:checkable="false"
-        android:enabled="true"
-        android:title="Parcela" />
-    <item
-        android:id="@+id/f02"
-        android:title="Agregar"
+        <item
+            android:title="Parcela" >
+            <menu >
+                <item
+                    android:id="@+id/f02"
+                    android:title="Agregar"
 
-        />
+                    />
+                <item
+                    android:id="@+id/f03"
+                    android:title="Ver"
+                    />
+            </menu>
+        </item>
+    </group>
     <item
-        android:id="@+id/f03"
-        android:title="Ver"
-        />
-    <item
-        android:id="@+id/f04"
-        android:title="Ají"
-        />
-    <item
-        android:id="@+id/f05"
-        android:title="Agregar"
-        />
-    <item
-        android:id="@+id/f06"
-        android:title="Ver"
-        />
+        android:title="Ají">
+        <menu >
+        <item
+            android:id="@+id/f05"
+            android:title="Agregar"
+            />
+        <item
+            android:id="@+id/f06"
+            android:title="Ver"
+            />
+        </menu>
+    </item>
+
     <item
         android:id="@+id/f07"
         android:title="Temporada"
