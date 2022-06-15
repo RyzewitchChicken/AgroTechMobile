@@ -18,8 +18,8 @@
         android:id="@+id/season"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="4dp"
         android:lineSpacingMultiplier="0.85"
         android:text="Temporada"
         android:textColor="#FF000000"
@@ -33,14 +33,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:text="Temporada de Verano:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="370dp"
+        android:layout_width="350dp"
         android:layout_height="400dp"
         android:layout_marginStart="21dp"
         android:layout_marginEnd="21dp"
@@ -51,7 +51,7 @@
         app:layout_constraintHorizontal_bias="0.736"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283">
+        app:layout_constraintVertical_bias="0.171">
 
 
         <TextView
@@ -66,7 +66,7 @@
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/ellorem"
+            android:id="@+id/seasondesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -91,11 +91,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/ellorem2"
+            android:id="@+id/seasonDateS"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="41dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="150dp"
+            android:lineSpacingMultiplier="1.29"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
+
+"
+            android:textColor="#FF8190A5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/seasonDateE"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="200dp"
             android:lineSpacingMultiplier="1.29"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
@@ -116,7 +130,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/ellorem3"
+            android:id="@+id/plague"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -136,17 +150,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="572dp"
+        android:layout_marginTop="472dp"
         android:text="Comentario:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/comentary"
-        android:layout_width="347dp"
-        android:layout_height="74dp"
+        android:layout_width="245dp"
+        android:layout_height="46dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="620dp"
+        android:layout_marginTop="508dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:inputType="textPersonName"

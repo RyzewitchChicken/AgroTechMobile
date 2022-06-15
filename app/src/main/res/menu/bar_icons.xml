@@ -13,5 +13,11 @@
         android:icon="@drawable/notificacion"
         android:title="notify"
         app:showAsAction="always"   />
+    <item
+        android:id="@+id/close"
+        android:title="Cerrar Sesión"
+        app:showAsAction="never"
+
+    />
 
 </menu>

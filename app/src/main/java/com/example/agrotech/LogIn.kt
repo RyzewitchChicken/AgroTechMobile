@@ -82,7 +82,7 @@ class LogIn : AppCompatActivity() {
                                         if (response != null) {
                                             globalVar = response.body().content?.get(index)?.id!!
                                         }
-                                            println("The subject of $index is $value")
+
 
                                     }
 
@@ -96,7 +96,7 @@ class LogIn : AppCompatActivity() {
                         }
 
                     } catch (e: Exception) {
-                        Log.i(TAG, "parseJson: ${e.message}")
+
                     }
 
 

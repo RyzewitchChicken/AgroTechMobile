@@ -47,7 +47,7 @@ class ClientEdit: AppCompatActivity() {
         val userService: UserService = Retro().getRetroClient().create(UserService::class.java)
         userService.getUserData(globalVar).enqueue(object : Callback<User> {
             override fun onResponse(call: Call<User>?, response: Response<User>?) {
-                Toast.makeText(this@ClientEdit, "Ok", Toast.LENGTH_LONG).show()
+
                 if (response != null) {
                     name.setText(response.body().name)
                     email.setText(response.body().email)

@@ -32,135 +32,190 @@
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="80dp"
             app:srcCompat="@drawable/login" />
 
 
-        <TextView
-            android:id="@+id/textView06"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="20dp"
+        <EditText
+            android:id="@+id/phoneedit"
             style="@style/edicontent"
-            android:text="Nombre:" />
-
-        <EditText
-            android:id="@+id/namedit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:focusable="false"
-            android:imeOptions="actionDone"
-            android:singleLine="true"
-            style="@style/edicontent"
-            tools:ignore="Deprecated" />
-
-        <TextView
-            android:id="@+id/textView08"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="60dp"
-            android:text="DNI:"
-            style="@style/edicontent"/>
-
-        <EditText
-            android:id="@+id/dniedit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="90dp"
-            android:ems="10"
-            android:inputType="number"
-            android:focusable="false"
-            style="@style/edicontent"/>
-
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="120dp"
-
-            android:text="INFORMACION CONTACTO "
-            style="@style/datatitles"/>
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="150dp"
-            android:text="Correo: "
-            style="@style/edicontent"/>
-
-        <EditText
-            android:id="@+id/emailedit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="180dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:focusable="false"
-            style="@style/edicontent"/>
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="210dp"
-            android:text="Contraseña: "
-            style="@style/edicontent"/>
-
-        <EditText
-            android:id="@+id/passedit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="240dp"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:focusable="false"
-            style="@style/edicontent"/>
-
-        <TextView
-            android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="270dp"
-            android:text="Telefono:"
-            style="@style/edicontent"/>
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="number" />
 
-        <EditText
-            android:id="@+id/phoneedit"
+        <TextView
+            android:id="@+id/textView20"
+            style="@style/datatitles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="300dp"
+            android:layout_marginBottom="60dp"
+            android:text="INFORMACION PERSONAL" />
+
+        <TextView
+            android:id="@+id/textView06"
+            style="@style/edicontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="Nombre:" />
+
+        <EditText
+            android:id="@+id/namedit"
+            style="@style/edicontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="0dp"
             android:ems="10"
-            android:inputType="number"
             android:focusable="false"
-            style="@style/edicontent"/>
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            tools:ignore="Deprecated" />
+
+        <ImageView
+            android:id="@+id/imageedit"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="250dp"
+
+            app:srcCompat="@drawable/lapiz" />
+
+        <TextView
+            android:id="@+id/textView08"
+            style="@style/edicontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="DNI:" />
+
+        <EditText
+            android:id="@+id/dniedit"
+            style="@style/edicontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="number" />
+
+        <ImageView
+            android:id="@+id/imagedni"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/lapiz" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/datatitles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="90dp"
+            android:text="INFORMACION CONTACTO " />
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/edicontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:text="Correo: " />
+
+        <EditText
+            android:id="@+id/emailedit"
+            style="@style/edicontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/imageemail"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="150dp"
+            app:srcCompat="@drawable/lapiz" />
+
+        <TextView
+            android:id="@+id/textView13"
+            style="@style/edicontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="180dp"
+            android:text="Contraseña: " />
+
+        <EditText
+            android:id="@+id/passedit"
+            style="@style/edicontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="210dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/imagepass"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="210dp"
+            app:srcCompat="@drawable/lapiz" />
+
+        <TextView
+            android:id="@+id/textView15"
+            style="@style/edicontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="240dp"
+            android:text="Telefono:" />
+
+        <ImageView
+            android:id="@+id/imagephone"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="270dp"
+            app:srcCompat="@drawable/lapiz" />
 
         <TextView
             android:id="@+id/textView16"
@@ -179,48 +234,8 @@
             android:layout_height="39dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="110dp"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="200dp"
             android:layout_marginRight="20dp"
-            app:srcCompat="@drawable/lapiz" />
-        <ImageView
-            android:id="@+id/imageedit"
-            android:layout_width="17dp"
-            android:layout_height="17dp"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="250dp"
-            android:layout_marginTop="30dp"
-            app:srcCompat="@drawable/lapiz" />
-        <ImageView
-            android:id="@+id/imagedni"
-            android:layout_width="17dp"
-            android:layout_height="17dp"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="250dp"
-            android:layout_marginTop="90dp"
-            app:srcCompat="@drawable/lapiz" />
-        <ImageView
-            android:id="@+id/imageemail"
-            android:layout_width="17dp"
-            android:layout_height="17dp"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="250dp"
-            android:layout_marginTop="180dp"
-            app:srcCompat="@drawable/lapiz" />
-        <ImageView
-            android:id="@+id/imagepass"
-            android:layout_width="17dp"
-            android:layout_height="17dp"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="250dp"
-            android:layout_marginTop="240dp"
-            app:srcCompat="@drawable/lapiz" />
-        <ImageView
-            android:id="@+id/imagephone"
-            android:layout_width="17dp"
-            android:layout_height="17dp"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="250dp"
-            android:layout_marginTop="300dp"
             app:srcCompat="@drawable/lapiz" />
 
         <androidx.cardview.widget.CardView
@@ -237,16 +252,6 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             app:srcCompat="@drawable/raster" />
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|left"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="30dp"
-            android:text="INFORMACION PERSONAL"
-            style="@style/datatitles"/>
 
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

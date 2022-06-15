@@ -1,5 +1,6 @@
 package com.example.agrotech
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -7,12 +8,14 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.agrotech.interfaces.TreatService
 import com.example.agrotech.models.Treat
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import kotlin.system.exitProcess
 
 class Treat:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,6 +58,24 @@ class Treat:AppCompatActivity() {
             }
             R.id.iconnotify -> {
                 startActivity( Intent(this@Treat , Notification::class.java))
+            }
+
+            R.id.close -> {
+                var builder= AlertDialog.Builder(this@Treat)
+                builder.setTitle("Cerrar Sesión")
+                builder.setMessage("¿Desea cerrar sesión?")
+                builder.setPositiveButton("Si", DialogInterface.OnClickListener{
+                        dialog, id ->
+                    moveTaskToBack(true)
+                    exitProcess(-1)
+                    dialog.cancel()
+                })
+                builder.setNegativeButton("No", DialogInterface.OnClickListener{
+                        dialog, id -> dialog.cancel()
+                })
+                var alert: AlertDialog =builder.create()
+                alert.show()
+
             }
         }
         return super.onOptionsItemSelected(item)

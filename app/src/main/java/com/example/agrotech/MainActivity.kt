@@ -1,5 +1,6 @@
 package com.example.agrotech
 
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,11 +11,13 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.agrotech.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
+import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             toggle= ActionBarDrawerToggle(this@MainActivity,drawerLayout,R.string.open,R.string.close)
             drawerLayout.addDrawerListener(toggle)
-
+            toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
             navView.setOnClickListener {
                 if (drawerLayout.isDrawerOpen(GravityCompat.END)) {
                     drawerLayout.closeDrawer(GravityCompat.END)
@@ -71,6 +74,23 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.iconnotify -> {
                 startActivity( Intent(this@MainActivity , Notification::class.java))
+            }
+            R.id.close -> {
+                var builder=AlertDialog.Builder(this@MainActivity)
+                builder.setTitle("Cerrar Sesión")
+                builder.setMessage("¿Desea cerrar sesión?")
+                builder.setPositiveButton("Si",DialogInterface.OnClickListener{
+                    dialog, id ->
+                    moveTaskToBack(true)
+                    exitProcess(-1)
+                    dialog.cancel()
+                })
+                builder.setNegativeButton("No",DialogInterface.OnClickListener{
+                        dialog, id -> dialog.cancel()
+                })
+                var alert:AlertDialog=builder.create()
+                alert.show()
+
             }
         }
         if (toggle.onOptionsItemSelected(item)) {
