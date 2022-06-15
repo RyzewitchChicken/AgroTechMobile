@@ -13,4 +13,10 @@ interface PlotService {
                      ): Call<Plot>
     @GET("plots")
     fun getPlots(): Call<PlotContent>
+
+    @GET("plots/{plotId}")
+    fun getPlotsById(@Path("plotId") id: Int): Call<Plot>
+
+    @PUT("plots/{plotId}")
+    fun updatePlotData(@Path("plotId") id: Int, @Body plot:Plot): Call<Plot>
 }

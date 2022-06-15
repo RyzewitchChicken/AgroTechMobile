@@ -18,7 +18,7 @@ class Retro {
         val httpClient : OkHttpClient=OkHttpClient.Builder().addInterceptor(interceptor).build()
 
         return Retrofit.Builder()
-            .baseUrl("http://184.73.40.134:8080/api/")
+            .baseUrl("http://10.0.2.2:8080/api/")
             .client(httpClient)
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()

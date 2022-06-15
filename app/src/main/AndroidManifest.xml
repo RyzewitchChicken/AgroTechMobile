@@ -41,6 +41,10 @@
             android:parentActivityName=".MainActivity">
         </activity>
         <activity
+            android:name=".EditPlot"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
             android:name=".AddChilli"
             android:parentActivityName=".MainActivity">
         </activity>

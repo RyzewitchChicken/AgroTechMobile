@@ -29,7 +29,7 @@ class Notification:AppCompatActivity() {
         val humid1=findViewById<TextView>(R.id.humi2)
         val plague1=findViewById<TextView>(R.id.name1)
 
-        /*val plagueService: PlagueService = Retro().getRetroClient().create(PlagueService::class.java)
+        val plagueService: PlagueService = Retro().getRetroClient().create(PlagueService::class.java)
         plagueService.getPlague().enqueue(object: Callback<PlagueContent> {
             override fun onResponse(call: Call<PlagueContent>?, response: Response<PlagueContent>?) {
                 if (response != null) {
@@ -48,6 +48,6 @@ class Notification:AppCompatActivity() {
                 Toast.makeText(this@Notification,"Error", Toast.LENGTH_LONG).show()
             }
 
-        })*/
+        })
     }
 }
