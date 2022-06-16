@@ -11,6 +11,7 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.agrotech.MainActivity.Companion.globalVar
 import com.example.agrotech.interfaces.PlotService
 import com.example.agrotech.interfaces.UserService
 import com.example.agrotech.models.Content
@@ -25,6 +26,7 @@ class ViewPlot:AppCompatActivity() {
 
     lateinit var names:String
     var ids:Int = 0
+    var userids:Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.view_plot)
@@ -42,32 +44,30 @@ class ViewPlot:AppCompatActivity() {
         plotService.getPlots().enqueue(object : Callback<PlotContent> {
             override fun onResponse(call: Call<PlotContent>?, response: Response<PlotContent>?) {
 
-                /*if (response != null) {
-                    plotdesc.setText(response.body().content?.get(0)?.description.toString())
-                    plotloca.setText(response.body().content?.get(0)?.location.toString())
-                    plotvol.setText(response.body().content?.get(0)?.volume.toString())
-                    plotarea.setText(response.body().content?.get(0)?.area.toString())
-
-                }*/
                 try {
                     var plotData = response?.body()?.content
                     if (plotData != null) {
                         var namePl = ArrayList<String>()
                         var idsPl = ArrayList<Int>()
+                        var useridsPl = ArrayList<Int>()
                         var i = 0
                         while (i < plotData.size) {
                             val jsonObject = plotData.get(i)
                             names= jsonObject.name.toString()
                             ids= jsonObject.id.toString().toInt()
-
+                            userids= jsonObject.userId.toString().toInt()
                             i++
                             namePl.add(names)
                             idsPl.add(ids)
-                            println(namePl)
-                            println(idsPl)
+                            useridsPl.add(userids)
+                            useridsPl.add(ids)
                         }
                     val spinner=findViewById<Spinner>(R.id.spinner)
                     val lista= namePl.toList()
+                    println(namePl)
+                    println(useridsPl)
+                    println(plotData)
+                    println("este es su id: "+globalVar)
                     val spn=ArrayAdapter(this@ViewPlot,android.R.layout.simple_spinner_dropdown_item,lista)
                     spinner.adapter=spn
                     spinner.onItemSelectedListener= object : AdapterView.OnItemSelectedListener {

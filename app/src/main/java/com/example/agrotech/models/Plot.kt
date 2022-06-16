@@ -20,5 +20,7 @@ class Plot {
     var volume: Float?=null
     @SerializedName("plotImage")
     var plotImage: String?=null
+    @SerializedName("userId")
+    var userId: Int?=null
 
 }

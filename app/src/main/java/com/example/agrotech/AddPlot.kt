@@ -38,6 +38,7 @@ class AddPlot : AppCompatActivity() {
             plotdata.volume=volume
             plotdata.name="nombre"
             plotdata.plotImage="imagen"
+            plotdata.userId= globalVar
             println(description)
             val plotService: PlotService = Retro().getRetroClient().create(PlotService::class.java)
             plotService.addPlot(globalVar,plotdata) .enqueue(object :Callback<Plot> {

@@ -23,6 +23,8 @@ class EditPlot:AppCompatActivity() {
     var ids:Int = 0
     var idedit:Int=0
     lateinit var plotname:String
+    var useredit:Int=0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.edit_plot)
@@ -42,7 +44,8 @@ class EditPlot:AppCompatActivity() {
             plotDataEdit.volume=plotvol.text.toString().toFloat()
             plotDataEdit.plotImage="Imagen"
             plotDataEdit.name=plotname
-            println("el id es:" + idedit)
+            plotDataEdit.userId=useredit
+
             val plotService: PlotService = Retro().getRetroClient().create(PlotService::class.java)
             plotService.updatePlotData(idedit,plotDataEdit) .enqueue(object : Callback<Plot> {
                 override fun onResponse(call: Call<Plot>?, response: Response<Plot>?) {
@@ -99,6 +102,7 @@ class EditPlot:AppCompatActivity() {
                                             plotarea.setText(response.body().area.toString())
                                             idedit=idsPl[namepos]
                                             plotname=response.body().name.toString()
+                                            useredit=response.body().userId.toString().toInt()
                                         }
 
                                     }
