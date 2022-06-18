@@ -14,7 +14,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class CustomAdapter(private val templist: ArrayList<String>,private val humilist: ArrayList<String>,private val nameplist: ArrayList<String> ):RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+class CustomAdapter(private val templist: ArrayList<String>,private val humilist: ArrayList<String>,private val nameplist: ArrayList<String>):RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
 
 

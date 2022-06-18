@@ -32,7 +32,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler"
             android:layout_width="match_parent"
-            android:layout_height="176dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,14 +40,7 @@
 
         </androidx.recyclerview.widget.RecyclerView>
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="148dp"
-            android:layout_height="126dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="320dp"
-            android:layout_marginBottom="80dp"
-            app:srcCompat="@drawable/agrotech" />
+
 
         <TextView
             android:id="@+id/textView15"

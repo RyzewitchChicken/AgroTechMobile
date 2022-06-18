@@ -1,5 +1,6 @@
 package com.example.agrotech
 
+import android.annotation.SuppressLint
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.agrotech.interfaces.PlotService
 import com.example.agrotech.models.Plot
 import com.example.agrotech.models.PlotContent
+import com.squareup.picasso.Picasso
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -24,7 +26,8 @@ class EditPlot:AppCompatActivity() {
     var idedit:Int=0
     lateinit var plotname:String
     var useredit:Int=0
-
+    var plotlink:String=""
+    @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.edit_plot)
@@ -34,15 +37,33 @@ class EditPlot:AppCompatActivity() {
         val plotvol=findViewById<EditText>(R.id.voluedit)
 
         val editbutton=findViewById<Button>(R.id.editplotdata)
-
         val plotDataEdit=Plot()
+        val addplot=findViewById<Button>(R.id.ploteditphoto)
+        addplot.setOnClickListener {
+            var builder2= AlertDialog.Builder(this@EditPlot)
+            builder2.setTitle("Ingrese Link de Imagen")
+            var input:EditText
+            input =  EditText(this);
+            builder2.setView(input)
+            builder2.setPositiveButton("Agregar", DialogInterface.OnClickListener{
+                    dialog, id ->
+                dialog.dismiss()
+                plotlink=input.text.toString()
+
+            })
+            builder2.setNegativeButton("Cancelar", DialogInterface.OnClickListener{
+                    dialog, id -> dialog.cancel()
+            })
+            var alert2: AlertDialog =builder2.create()
+            alert2.show()
+        }
 
         editbutton.setOnClickListener() {
             plotDataEdit.description=plotdesc.text.toString()
             plotDataEdit.area=plotarea.text.toString().toFloat()
             plotDataEdit.location=plotloca.text.toString()
             plotDataEdit.volume=plotvol.text.toString().toFloat()
-            plotDataEdit.plotImage="Imagen"
+            plotDataEdit.plotImage=plotlink
             plotDataEdit.name=plotname
             plotDataEdit.userId=useredit
 

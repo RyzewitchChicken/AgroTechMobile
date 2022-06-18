@@ -21,10 +21,31 @@ import kotlin.system.exitProcess
 class AddPlot : AppCompatActivity() {
     lateinit var add:Button
     lateinit var ar:EditText
+    var plotlink:String=""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.add_plot)
         add=findViewById(R.id.add)
+        val addplot=findViewById<Button>(R.id.plotadd)
+        addplot.setOnClickListener {
+            var builder2= AlertDialog.Builder(this@AddPlot)
+            builder2.setTitle("Ingrese Link de Imagen")
+            var input:EditText
+            input =  EditText(this);
+            builder2.setView(input)
+            builder2.setPositiveButton("Agregar", DialogInterface.OnClickListener{
+                    dialog, id ->
+                        dialog.dismiss()
+                        plotlink=input.text.toString()
+
+            })
+            builder2.setNegativeButton("Cancelar", DialogInterface.OnClickListener{
+                    dialog, id -> dialog.cancel()
+            })
+            var alert2: AlertDialog =builder2.create()
+            alert2.show()
+        }
+
         add.setOnClickListener{
             val description = findViewById<EditText>(R.id.desc).text.toString()
             val location = findViewById<EditText>(R.id.plotstatus).text.toString()
@@ -37,7 +58,7 @@ class AddPlot : AppCompatActivity() {
             plotdata.area=area
             plotdata.volume=volume
             plotdata.name="nombre"
-            plotdata.plotImage="imagen"
+            plotdata.plotImage=plotlink
             plotdata.userId= globalVar
             println(description)
             val plotService: PlotService = Retro().getRetroClient().create(PlotService::class.java)

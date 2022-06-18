@@ -17,6 +17,7 @@ import com.example.agrotech.interfaces.UserService
 import com.example.agrotech.models.Content
 import com.example.agrotech.models.Plot
 import com.example.agrotech.models.PlotContent
+import com.squareup.picasso.Picasso
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -34,7 +35,7 @@ class ViewPlot:AppCompatActivity() {
         val plotloca=findViewById<EditText>(R.id.plotloca)
         val plotarea=findViewById<EditText>(R.id.plotarea)
         val plotvol=findViewById<EditText>(R.id.plotvolu)
-
+        val plotim=findViewById<ImageView>(R.id.plotimage)
         val editbutton = findViewById<Button>(R.id.editplot)
         editbutton.setOnClickListener {
             val intent = Intent(this, EditPlot::class.java)
@@ -88,6 +89,7 @@ class ViewPlot:AppCompatActivity() {
                                         plotloca.setText(response.body().location.toString())
                                         plotvol.setText(response.body().volume.toString())
                                         plotarea.setText(response.body().area.toString())
+                                        Picasso.get().load(response.body().plotImage).into(plotim)
                                     }
 
                                 }
