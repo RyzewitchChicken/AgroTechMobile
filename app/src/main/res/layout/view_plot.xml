@@ -6,14 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ViewPlot">
 
+
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/backopacity" />
-
-
 
     <TextView
         android:id="@+id/textView17"
@@ -30,22 +33,32 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/editplot"
+        android:id="@+id/btVerPlot"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="220dp"
 
-        android:layout_marginTop="656dp"
+        android:layout_marginTop="572dp"
         android:text="Editar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btPlaga"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="10dp"
+        android:text="Presenta Plaga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plotvolu" />
 
     <EditText
         android:id="@+id/plotdesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="176dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:focusable="false"
@@ -60,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="236dp"
         android:text="Ubicacion de la Parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -70,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="308dp"
+        android:layout_marginTop="272dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:focusable="false"
@@ -85,7 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="384dp"
+        android:layout_marginTop="332dp"
         android:text="Area de la Parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -95,7 +108,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="428dp"
+        android:layout_marginTop="368dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:focusable="false"
@@ -110,7 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="492dp"
+        android:layout_marginTop="428dp"
         android:text="Volumen de la parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -120,7 +133,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="464dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:focusable="false"
@@ -135,7 +148,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="604dp"
+        android:layout_marginTop="516dp"
         android:text="Foto de la parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

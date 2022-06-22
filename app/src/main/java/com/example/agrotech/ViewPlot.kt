@@ -1,10 +1,8 @@
 package com.example.agrotech
 
-import android.content.ContentValues
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -12,8 +10,6 @@ import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.agrotech.interfaces.PlotService
-import com.example.agrotech.interfaces.UserService
-import com.example.agrotech.models.Content
 import com.example.agrotech.models.Plot
 import com.example.agrotech.models.PlotContent
 import retrofit2.Call
@@ -33,7 +29,13 @@ class ViewPlot:AppCompatActivity() {
         val plotarea=findViewById<EditText>(R.id.plotarea)
         val plotvol=findViewById<EditText>(R.id.plotvolu)
 
-        val editbutton = findViewById<Button>(R.id.editplot)
+        val btPlaga = findViewById<Button>(R.id.btPlaga)
+        btPlaga.setOnClickListener {
+            val intent = Intent(this, Plague::class.java)
+            startActivity(intent)
+        }
+
+        val editbutton = findViewById<Button>(R.id.btVerPlot)
         editbutton.setOnClickListener {
             val intent = Intent(this, EditPlot::class.java)
             startActivity(intent)

@@ -15,6 +15,10 @@
                     android:id="@+id/f03"
                     android:title="Ver"
                     />
+                <item
+                    android:id="@+id/f09"
+                    android:title="Lista Parcelas"
+                    />
             </menu>
         </item>
     </group>
