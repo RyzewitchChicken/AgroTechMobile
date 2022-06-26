@@ -43,6 +43,7 @@ class ClientEdit: AppCompatActivity() {
         val button_phone = findViewById<ImageView>(R.id.imagephone)
         val button_email = findViewById<ImageView>(R.id.imageemail)
 
+        val button_edituser=findViewById<Button>(R.id.editalluser)
         //val send = findViewById<ImageView>(R.id.send)
         val userService: UserService = Retro().getRetroClient().create(UserService::class.java)
         userService.getUserData(globalVar).enqueue(object : Callback<User> {
@@ -82,7 +83,33 @@ class ClientEdit: AppCompatActivity() {
         button_email.setOnClickListener{
             email.isFocusableInTouchMode = true
         }
-        name.setOnEditorActionListener(OnEditorActionListener { v, actionId, event ->
+
+        button_edituser.setOnClickListener{
+            val userData = User()
+            userData.name = name.text.toString()
+            userData.email = email.text.toString()
+            userData.dni = dni.text.toString().toInt()
+            userData.password = pass.text.toString()
+            userData.cellphoneNumber = phone.text.toString().toInt()
+            userData.lastname = lastn
+            userData.profileImage = profileIm
+            userData.accessType = true
+            userService.updateUserData(globalVar, userData)  .enqueue(object: Callback<User> {
+                override fun onResponse(call: Call<User>?, response: Response<User>?) {
+                    Toast.makeText(this@ClientEdit,"Datos Actualizados", Toast.LENGTH_LONG).show()
+
+
+                }
+
+                override fun onFailure(call: Call<User>?, t: Throwable?) {
+                    Toast.makeText(this@ClientEdit,"Error", Toast.LENGTH_LONG).show()
+                }
+
+            })
+        }
+
+
+        /*name.setOnEditorActionListener(OnEditorActionListener { v, actionId, event ->
             if (event != null && event.keyCode === KeyEvent.KEYCODE_ENTER || actionId == EditorInfo.IME_ACTION_DONE) {
                 val userData = User()
                 userData.name = name.text.toString()
@@ -211,7 +238,7 @@ class ClientEdit: AppCompatActivity() {
                 })
             }
             false
-        })
+        })*/
 
 
     }

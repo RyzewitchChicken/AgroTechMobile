@@ -37,10 +37,16 @@ class ViewPlot:AppCompatActivity() {
         val plotvol=findViewById<EditText>(R.id.plotvolu)
         val plotim=findViewById<ImageView>(R.id.plotimage)
         val editbutton = findViewById<Button>(R.id.editplot)
+        val details=findViewById<Button>(R.id.details)
         editbutton.setOnClickListener {
             val intent = Intent(this, EditPlot::class.java)
             startActivity(intent)
         }
+        details.setOnClickListener{
+            val intent=Intent(this,DetailsPlot::class.java)
+            startActivity(intent)
+        }
+
         val plotService: PlotService = Retro().getRetroClient().create(PlotService::class.java)
         plotService.getPlots().enqueue(object : Callback<PlotContent> {
             override fun onResponse(call: Call<PlotContent>?, response: Response<PlotContent>?) {
@@ -62,6 +68,7 @@ class ViewPlot:AppCompatActivity() {
                             idsPl.add(ids)
                             useridsPl.add(userids)
                             useridsPl.add(ids)
+
                         }
                     val spinner=findViewById<Spinner>(R.id.spinner)
                     val lista= namePl.toList()
@@ -89,7 +96,12 @@ class ViewPlot:AppCompatActivity() {
                                         plotloca.setText(response.body().location.toString())
                                         plotvol.setText(response.body().volume.toString())
                                         plotarea.setText(response.body().area.toString())
-                                        Picasso.get().load(response.body().plotImage).into(plotim)
+                                        if (response.body().plotImage.isNullOrEmpty()) {
+                                            Picasso.get().load("no existe imagen").into(plotim)
+                                        } else {
+                                            Picasso.get().load(response.body().plotImage).into(plotim)
+                                        }
+
                                     }
 
                                 }
