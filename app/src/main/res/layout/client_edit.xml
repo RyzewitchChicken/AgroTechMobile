@@ -20,7 +20,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="21dp"
-        android:layout_marginTop="31dp"
         android:layout_marginEnd="21dp"
         android:layout_marginBottom="31dp"
         android:background="@drawable/borderer"
@@ -208,6 +207,16 @@
             android:layout_marginTop="240dp"
             android:text="Telefono:" />
 
+        <Button
+            android:id="@+id/editalluser"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|left"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="320dp"
+            android:text="Editar" />
+
+
         <ImageView
             android:id="@+id/imagephone"
             android:layout_width="17dp"
@@ -223,10 +232,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
+            android:lineSpacingMultiplier="0.27"
             android:text="Back"
             android:textColor="#FF008F39"
-            android:textSize="15sp"
-            android:lineSpacingMultiplier="0.27"/>
+            android:textSize="15sp" />
 
         <ImageView
             android:id="@+id/send"
@@ -243,7 +252,7 @@
             android:layout_height="3dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="70dp"
-            app:cardBackgroundColor="#008F39"/>
+            app:cardBackgroundColor="#008F39" />
 
         <ImageView
             android:id="@+id/back"
