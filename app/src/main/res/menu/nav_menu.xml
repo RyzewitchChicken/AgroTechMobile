@@ -44,5 +44,9 @@
         android:id="@+id/f08"
         android:title="Tratamiento"
         />
+    <item
+        android:id="@+id/f10"
+        android:title="Noticias"
+        />
 
 </menu>

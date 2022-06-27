@@ -97,15 +97,16 @@
         app:layout_constraintTop_toBottomOf="@+id/tvArea_info"
         tools:text="vol (m3)" />
 
-
-    <Button
-        android:id="@+id/btVerPlot"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="20dp"
-        android:text="Ver"
+    <ImageView
+        android:id="@+id/ivSeparator"
+        android:layout_width="242dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="1dp"
+        android:scaleX="9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvVolumen" />
+        app:layout_constraintTop_toBottomOf="@+id/ivPhoto"
+        app:srcCompat="?attr/editTextBackground" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
