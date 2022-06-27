@@ -87,7 +87,7 @@ class LogIn : AppCompatActivity() {
                                     }
 
                                 }
-                                val intent = Intent(this@LogIn, MainActivity::class.java)
+                                val intent = Intent(this@LogIn, Plots_List::class.java)
                                 startActivity(intent)
                             } else {
                                 Toast.makeText(this@LogIn, "Credenciales incorrectas", Toast.LENGTH_LONG).show()

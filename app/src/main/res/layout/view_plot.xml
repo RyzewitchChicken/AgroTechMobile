@@ -4,16 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailsPlot">
+    tools:context=".ViewPlot">
+
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/backopacity" />
-
-
 
     <TextView
         android:id="@+id/textView17"
@@ -30,32 +33,32 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/editplot"
+        android:id="@+id/btVerPlot"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="220dp"
 
-        android:layout_marginTop="656dp"
+        android:layout_marginTop="572dp"
         android:text="Editar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:id="@+id/details"
+        android:id="@+id/btPlaga"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="220dp"
-
-        android:layout_marginTop="600dp"
-        android:text="Detalles"
+        android:layout_marginTop="10dp"
+        android:text="Presenta Plaga"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/plotvolu" />
 
     <EditText
         android:id="@+id/plotdesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="176dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:focusable="false"
@@ -64,12 +67,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/plotvolu"
+    <TextView
+        android:id="@+id/textView19"
+        style="@style/plotdesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="236dp"
+        android:text="Ubicacion de la Parcela:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/plotloca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="272dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:focusable="false"
@@ -84,7 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="344dp"
+        android:layout_marginTop="332dp"
         android:text="Area de la Parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -94,7 +108,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="388dp"
+        android:layout_marginTop="368dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:focusable="false"
@@ -109,8 +123,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="452dp"
+        android:layout_marginTop="428dp"
         android:text="Volumen de la parcela:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/plotvolu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="464dp"
+        android:background="@drawable/editborder"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textPersonName"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -120,42 +148,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="564dp"
+        android:layout_marginTop="516dp"
         android:text="Foto de la parcela:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView19"
-        style="@style/plotdesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="248dp"
-        android:text="Ubicacion de la Parcela:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/plotloca"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="292dp"
-        android:background="@drawable/editborder"
-        android:ems="10"
-        android:focusable="false"
-        android:inputType="textPersonName"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/plotimage"
-        android:layout_width="160dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="600dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -181,8 +175,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Spinner
-        android:id="@+id/spinner"
+    <EditText
+        android:id="@+id/plotname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

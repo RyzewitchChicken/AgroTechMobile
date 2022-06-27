@@ -11,6 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/backopacity" />
 
 
@@ -32,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="348dp"
+        android:layout_marginTop="312dp"
         android:background="@drawable/editborder"
         android:inputType="numberDecimal|numberSigned"
 
@@ -69,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="164dp"
         android:text="Ubicacion de la Parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -79,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="204dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:inputType="textPersonName"
@@ -92,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginTop="272dp"
         android:text="Area de la Parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -102,7 +105,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="412dp"
         android:background="@drawable/editborder"
         android:ems="10"
         android:inputType="numberDecimal|numberSigned"
@@ -115,18 +118,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="524dp"
+        android:layout_marginTop="476dp"
         android:text="Foto de la parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/plotadd"
+        android:id="@+id/button3"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
 
-        android:layout_marginTop="560dp"
+        android:layout_marginTop="512dp"
         android:text="Foto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -136,7 +139,7 @@
         android:layout_width="240dp"
         android:layout_height="49dp"
         android:layout_marginStart="76dp"
-        android:layout_marginTop="608dp"
+        android:layout_marginTop="560dp"
         android:background="@drawable/button_style"
         android:text="Agregar"
         app:layout_constraintStart_toStartOf="parent"
@@ -148,10 +151,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="412dp"
+        android:layout_marginTop="376dp"
         android:text="Volumen de la parcela:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

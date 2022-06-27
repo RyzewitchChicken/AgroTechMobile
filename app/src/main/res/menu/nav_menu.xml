@@ -15,6 +15,10 @@
                     android:id="@+id/f03"
                     android:title="Ver"
                     />
+                <item
+                    android:id="@+id/f09"
+                    android:title="Lista Parcelas"
+                    />
             </menu>
         </item>
     </group>
@@ -39,6 +43,10 @@
     <item
         android:id="@+id/f08"
         android:title="Tratamiento"
+        />
+    <item
+        android:id="@+id/f10"
+        android:title="Noticias"
         />
 
 </menu>

@@ -6,11 +6,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Season">
+
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/backopacity" />
 
 
@@ -33,25 +37,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="20dp"
         android:text="Temporada de Verano:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/season" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="350dp"
         android:layout_height="400dp"
         android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="21dp"
-        android:layout_marginBottom="20dp"
         android:background="@drawable/borderer"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.736"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213">
+        app:layout_constraintTop_toBottomOf="@+id/season_title">
 
 
         <TextView
@@ -144,27 +146,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
             android:textSize="15sp" />
     </FrameLayout>
 
-    <EditText
-        android:id="@+id/comentary"
-        android:layout_width="245dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="528dp"
-        android:background="@drawable/editborder"
-        android:ems="10"
-        android:inputType="textPersonName"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/comentary_title"
         style="@style/plotdesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="492dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
         android:text="Comentario:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <EditText
+        android:id="@+id/comentary"
+        android:layout_width="245dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editborder"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comentary_title" />
 </androidx.constraintlayout.widget.ConstraintLayout>
