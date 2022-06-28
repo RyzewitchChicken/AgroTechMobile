@@ -59,6 +59,8 @@ class MainActivity : AppCompatActivity() {
                         startActivity( Intent(this@MainActivity , Season::class.java))}
                     R.id.f08->{
                         startActivity( Intent(this@MainActivity , Treat::class.java))}
+                    R.id.f09->{
+                        startActivity( Intent(this@MainActivity , Plots_List::class.java))}
                 }
                 true
             }

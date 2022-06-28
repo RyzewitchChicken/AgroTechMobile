@@ -2,19 +2,28 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.agrotech">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Agrotech"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".Plague"
+            android:exported="false" />
+        <activity
+            android:name=".Plots_List"
+            android:exported="false"
+            />
         <activity
             android:name=".LogIn"
             android:exported="true">
@@ -26,52 +35,35 @@
         </activity>
         <activity
             android:name=".AddPlot"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ClientData"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ClientEdit"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ViewPlot"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".EditPlot"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AddChilli"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Season"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ViewChilli"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Treat"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Notification"
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity
-            android:name=".DetailsPlot"
-            android:parentActivityName=".MainActivity">
-        </activity>
-
-        <activity
-            android:name=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

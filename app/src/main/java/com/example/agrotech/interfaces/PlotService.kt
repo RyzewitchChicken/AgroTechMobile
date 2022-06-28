@@ -9,7 +9,7 @@ import retrofit2.http.*
 interface PlotService {
 
     @POST("users/{userId}/plots")
-    fun addPlot(@Path("userId") id:Int, @Body data: Plot
+    fun addPlot(@Path("userId") userId:Int, @Body data: Plot
                      ): Call<Plot>
     @GET("plots")
     fun getPlots(): Call<PlotContent>
