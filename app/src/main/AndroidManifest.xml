@@ -37,37 +37,38 @@
         </activity>
         <activity
             android:name=".AddPlot"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".Plots_List" />
         <activity
             android:name=".ClientData"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".Plots_List" />
         <activity
             android:name=".ClientEdit"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".ClientData" />
         <activity
             android:name=".ViewPlot"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".Plots_List" />
         <activity
             android:name=".EditPlot"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".ViewPlot" />
         <activity
             android:name=".AddChilli"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".Plots_List" />
         <activity
             android:name=".Season"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".Plots_List" />
         <activity
             android:name=".ViewChilli"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".AddChilli" />
         <activity
             android:name=".Treat"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".Plots_List" />
         <activity
             android:name=".Notification"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".DetailsPlot"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".ViewPlot" />
+
         <activity android:name=".MainActivity" />
     </application>
 

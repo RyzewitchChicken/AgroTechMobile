@@ -35,9 +35,7 @@ class Plots_List : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_plots_list)
 
-        val actionBar = supportActionBar
 
-        actionBar!!.title = "PARCELAS"
 
         //actionBar!!.setDisplayHomeAsUpEnabled(true)
 

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/border_notify"
+    app:cardBackgroundColor="#e5e9f2"
+    android:layout_margin="30dp"
+    app:cardCornerRadius="16dp"
+    android:id="@+id/seasonview"
+    app:cardElevation="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.29"
+            android:text="Descripcion"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/seasondesc"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:lineSpacingMultiplier="1.29"
+            android:text=" "
+            android:textColor="#FF8190A5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="85dp"
+            android:lineSpacingMultiplier="1.29"
+            android:text="Posibles fechas"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/seasonDateS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="110dp"
+            android:lineSpacingMultiplier="1.29"
+            android:text=" "
+            android:textColor="#FF8190A5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/seasonDateE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="140dp"
+            android:lineSpacingMultiplier="1.29"
+            android:text=""
+            android:textColor="#FF8190A5"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/plagas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="170dp"
+            android:lineSpacingMultiplier="1.29"
+            android:text="Posibles plagas"
+            android:textColor="#FF000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/plague"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="200dp"
+            android:lineSpacingMultiplier="1.29"
+            android:text=" "
+            android:textColor="#FF8190A5"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/recordatory"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="300dp"
+
+            app:srcCompat="@drawable/ic_baseline_turned_in_not_24" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

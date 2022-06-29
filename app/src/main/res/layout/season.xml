@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".Season">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
 
     <ImageView
         android:id="@+id/imageView1"
@@ -31,142 +35,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/season_title"
-        style="@style/plotdesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:text="Temporada de Verano:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/season" />
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="350dp"
-        android:layout_height="400dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="21dp"
-        android:background="@drawable/borderer"
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerseason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/season_title">
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
-        <TextView
-            android:id="@+id/des"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:lineSpacingMultiplier="1.29"
-            android:text="Descripcion"
-            android:textColor="#FF000000"
-            android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/seasondesc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="30dp"
-            android:lineSpacingMultiplier="1.29"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
-
-"
-            android:textColor="#FF8190A5"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/dates"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="130dp"
-            android:lineSpacingMultiplier="1.29"
-            android:text="Posibles fechas"
-            android:textColor="#FF000000"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/seasonDateS"
-            android:layout_width="wrap_content"
-            android:layout_height="41dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="150dp"
-            android:lineSpacingMultiplier="1.29"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
-
-"
-            android:textColor="#FF8190A5"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/seasonDateE"
-            android:layout_width="wrap_content"
-            android:layout_height="41dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="200dp"
-            android:lineSpacingMultiplier="1.29"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
-
-"
-            android:textColor="#FF8190A5"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/plagas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="250dp"
-            android:lineSpacingMultiplier="1.29"
-            android:text="Posibles plagas"
-            android:textColor="#FF000000"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/plague"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="270dp"
-            android:lineSpacingMultiplier="1.29"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...
-
-"
-            android:textColor="#FF8190A5"
-            android:textSize="15sp" />
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/comentary_title"
-        style="@style/plotdesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="30dp"
-        android:text="Comentario:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
-
-    <EditText
-        android:id="@+id/comentary"
-        android:layout_width="245dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/editborder"
-        android:ems="10"
-
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/comentary_title" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
