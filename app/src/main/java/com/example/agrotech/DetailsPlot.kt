@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import com.example.agrotech.interfaces.PlagueService
 import com.example.agrotech.interfaces.PlotPlaguesService
@@ -40,6 +41,7 @@ class DetailsPlot:AppCompatActivity() {
         val plotim=findViewById<ImageView>(R.id.detailimage)
         val emptyimage=findViewById<TextView>(R.id.noimage)
         val noPlague=findViewById<TextView>(R.id.noplagues)
+        val btPla=findViewById<Button>(R.id.btPlaga)
         val plotService: PlotService = Retro().getRetroClient().create(PlotService::class.java)
         plotService.getPlots().enqueue(object : Callback<PlotContent> {
             override fun onResponse(call: Call<PlotContent>?, response: Response<PlotContent>?) {
@@ -137,6 +139,12 @@ class DetailsPlot:AppCompatActivity() {
                                                                             if (response != null) {
                                                                                 namePlague.isVisible =true
                                                                                 namePlague.setText(response.body().type.toString())
+                                                                                btPla.isVisible=true
+                                                                                btPla.setOnClickListener {
+                                                                                    val intent = Intent(this@DetailsPlot, com.example.agrotech.Plague::class.java)
+                                                                                    intent.putExtra("Plaga",response.body().type.toString())
+                                                                                    startActivity(intent)
+                                                                                }
                                                                             }
 
                                                                         }
@@ -157,6 +165,7 @@ class DetailsPlot:AppCompatActivity() {
 
                                                 } else {
                                                     namePlague.isVisible =false
+                                                    btPla.isVisible=false
                                                     noPlague.text="No tiene plaga"
                                                 }
 

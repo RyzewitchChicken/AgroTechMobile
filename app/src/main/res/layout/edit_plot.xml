@@ -44,7 +44,16 @@
             android:text="Editar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/ploteditphoto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
 
+            android:layout_marginTop="656dp"
+            android:text="Foto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
         <EditText
             android:id="@+id/descedit"
             android:layout_width="wrap_content"

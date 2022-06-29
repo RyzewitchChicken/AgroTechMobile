@@ -38,14 +38,13 @@ class ViewPlot:AppCompatActivity() {
             plotvol.setText(plot.volume.toString())
 
         }
-
-
-
-        val btPlaga = findViewById<Button>(R.id.btPlaga)
-        btPlaga.setOnClickListener {
-            val intent = Intent(this, Plague::class.java)
+        val details=findViewById<Button>(R.id.details)
+        details.setOnClickListener{
+            val intent=Intent(this,DetailsPlot::class.java)
             startActivity(intent)
         }
+
+
 
         val editbutton = findViewById<Button>(R.id.btVerPlot)
         editbutton.setOnClickListener {
