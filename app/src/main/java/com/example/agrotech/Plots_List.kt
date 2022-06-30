@@ -86,6 +86,8 @@ class Plots_List : AppCompatActivity() {
                         startActivity( Intent(this@Plots_List , Plots_List::class.java))}
                     R.id.f10->{
                         startActivity( Intent(this@Plots_List , MainActivity::class.java))}
+                    R.id.f12->{
+                        startActivity( Intent(this@Plots_List , Spinner::class.java))}
                 }
                 true
             }

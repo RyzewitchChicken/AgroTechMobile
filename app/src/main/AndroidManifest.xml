@@ -20,12 +20,14 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Spinner"
+            android:exported="false" />
+        <activity
             android:name=".Plague"
             android:exported="false" />
         <activity
             android:name=".Plots_List"
-            android:exported="false"
-            />
+            android:exported="false" />
         <activity
             android:name=".LogIn"
             android:exported="true">
