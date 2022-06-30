@@ -14,8 +14,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-<<<<<<< Updated upstream
-=======
+
 
         <TextView
             android:id="@+id/plage"
@@ -30,7 +29,6 @@
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
->>>>>>> Stashed changes
 
         <TextView
             android:id="@+id/temp"
