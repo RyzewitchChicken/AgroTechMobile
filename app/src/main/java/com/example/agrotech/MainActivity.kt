@@ -61,6 +61,10 @@ class MainActivity : AppCompatActivity() {
                         startActivity( Intent(this@MainActivity , Treat::class.java))}
                     R.id.f09->{
                         startActivity( Intent(this@MainActivity , Plots_List::class.java))}
+                    R.id.f10->{
+                        startActivity( Intent(this@MainActivity , MainActivity::class.java))}
+                    R.id.f12->{
+                        startActivity( Intent(this@MainActivity , Spinner::class.java))}
                 }
                 true
             }

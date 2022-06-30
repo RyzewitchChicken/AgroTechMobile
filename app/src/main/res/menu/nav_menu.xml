@@ -37,6 +37,10 @@
     </item>
 
     <item
+        android:id="@+id/f12"
+        android:title="Preferencias Aji"
+        />
+    <item
         android:id="@+id/f07"
         android:title="Temporada"
         />

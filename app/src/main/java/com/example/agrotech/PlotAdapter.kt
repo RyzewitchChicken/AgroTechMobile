@@ -23,7 +23,7 @@ class PlotAdapter(var plots: ArrayList<Plot>): RecyclerView.Adapter<PlotAdapter.
 
     override fun onBindViewHolder(holder: PlotPrototype, position: Int) {
         val plot = plots[position]
-        holder.tvTitle.setText(plot.name)
+        holder.tvTitle.setText(plot.description)
         holder.tvLocation.setText(plot.location)
         holder.tvArea_info.setText(plot.area.toString())
         holder.tvVolumen_info.setText(plot.volume.toString())

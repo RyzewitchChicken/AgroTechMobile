@@ -2,4 +2,36 @@
     <string name="app_name"></string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="descTempInv">En los meses de julio y Agosto la temperatura alcanza su nivel más bajo. Esto provoca la aparición de Pytophthora y Botrytis. Tomar las medidas necesarias</string>
+    <string name="descTempVer">En los meses de Enero y Febrero el calor aumenta considerabelmente. Esto provoca la aparición de Odidiopsis y Alternaria. Tomar las medidas necesarias</string>
+    <string name="Invierno">Temporada de Invierno</string>
+    <string name="Verano">Temporada de Verano</string>
+    <string name="umbral12">La temperatura actual se está acercando al umbral de 12°C. Tomar las precauciones necesarias</string>
+    <string name="umbral15">La temperatura actual se está acercando al umbral de 15°C. Tomar las precauciones necesarias</string>
+    <string name="umbral17">La temperatura actual se está acercando al umbral de 17°C. Tomar las precauciones necesarias</string>
+    <string name="umbral20">La temperatura actual se está acercando al umbral de 20°C. Tomar las precauciones necesarias</string>
+    <string name="umbral25">La temperatura actual se está acercando al umbral de 25°C. Tomar las precauciones necesarias</string>
+    <string name="umbral30">La temperatura actual se está acercando al umbral de 30°C. Tomar las precauciones necesarias</string>
+    <string name="noumbral">No hay umbral próximo</string>
+    <string name="ajiLimo">Blanco, verde, morado, amarillo,
+        anaranjado, rojo. Protagonista principal de la
+        cocina del norte, es el ají más variado del Perú.
+    </string>
+    <string name="ajiPanca">Color sangre o casi
+        negro, es el principal ají deshidratado
+        del Perú, con un sistema de cultivo
+        similar al del escabeche.
+    </string>
+    <string name="ajiVerde">Verde suave. Largo o muy largo, es el
+        ají más común en los mercados de estas regiones
+        norteñas
+    </string>
+    <string name="ajiRocoto">Rojos, amarillos, anaranjados.
+        Grandes y carnosos en los mercados, más
+        pequeños y picantes en valles abrigados y huertas
+        de la sierra sur
+    </string>
+
+
+
 </resources>
